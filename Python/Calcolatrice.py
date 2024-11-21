@@ -29,17 +29,20 @@ while x:
         divx = float(input("Dimmi il primo numero che vuoi dividere!\n"))
         divy = float(input("perfetto, adesso dimmi il secondo numero che vuoi dividere!\n"))
         if divy!=0:
-            print("la divisione fra " + str(divx) + " e " + str(divy) + " è:\n" + str(divresult) + "\n")
             divresult = divx / divy
+            print("la divisione fra " + str(divx) + " e " + str(divy) + " è:\n" + str(divresult) + "\n")
             time.sleep(2)
+            continue
         else:
             print("Non si può dividere per 0\n")
-        time.sleep(2)
-        continue
+            time.sleep(2)
+            continue
     else:
         print("ERRORE\nHai inserito qualcosa di sbagliato :P\nRiprova ;D\n")
-    time.sleep(2)
-    restart =input("Se devi fare altri calcoli?\nRispondi con 'S' sennò premi qualsiasi altro pulsante")
-    if restart != restart.lower():
+        time.sleep(2)
+    restart =input("Devi fare altri calcoli?\nRispondi con 'S' sennò premi qualsiasi altro pulsante\n")
+    if restart.lower() != "s":
         x = False
+    else:
+        continue
         
