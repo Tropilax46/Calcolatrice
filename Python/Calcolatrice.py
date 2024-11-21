@@ -40,7 +40,8 @@ while x:
     else:
         print("ERRORE\nHai inserito qualcosa di sbagliato :P\nRiprova ;D\n")
         time.sleep(2)
-    restart =input("Devi fare altri calcoli?\nRispondi con 'S' sennò premi qualsiasi altro pulsante\n")
+#the program ignore restart=input(...) if the upper else is true [print("ERRORE\nHai inserito qualcosa di sbagliato :P\nRiprova ;D\n")] 
+    restart=input("Devi fare altri calcoli?\nRispondi con 'S' sennò premi qualsiasi altro pulsante\n")
     if restart.lower() != "s":
         x = False
     else:
