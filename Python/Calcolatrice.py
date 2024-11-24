@@ -1,5 +1,4 @@
 import time
-from math import *
 
 User = input("Come ti chiami?\n")
 Unit = input("Con cosa vuoi giocare?\n")
@@ -15,7 +14,7 @@ print(f"ciao {str(User)}!\nbenvenuto nella calcolatrice più simpatica del mondo
 
 x = True
 while x:
-    funz = float(input("cosa ti va di utilizzare?\n\nDIGITA:\n\n1 per ADDIZIONE\n2 per SOTTRAZIONE\n3 per MOLTIPLICAZIONE\n4 per DIVISIONE\n"))
+    funz = float(input("cosa ti va di utilizzare?\n\nDIGITA:\n\n1 per ADDIZIONE\n2 per SOTTRAZIONE\n3 per MOLTIPLICAZIONE\n4 per DIVISIONE\n5 per un calcolo ESPONENZIALE\n6 per risolvere una RADICE QUADRATA\n"))
     if funz == 1:
         sumx = float(input("\nDimmi il primo numero che vuoi sommare!\n"))
         sumy = float(input("\nPerfetto, adesso dimmi il secondo numero che vuoi sommare!\n"))
@@ -44,6 +43,17 @@ while x:
         else:
             print("\nNon si può dividere per 0\n")
             time.sleep(2)
+    elif funz == 5:
+        baseesp = float(input("\nDimmi la base!\n"))
+        espo = float(input("\nPerfetto, adesso dimmi l'esponente!\n"))
+        espresult = baseesp ** espo
+        print(f"\nIl risultato del calcolo esponenziale con base {str(baseesp)} ed esponente {str(espo)} è:\n{str(espresult)} {str(Unit)}\n")
+        time.sleep(2)
+    elif funz == 6:
+        baseroot = float(input("\nDimmi la base!\n"))
+        rootresult = baseroot ** (1/2)
+        print(f"\nLa soluzione della radice quadrata con base {str(baseroot)} è:\n{str(rootresult)} {str(Unit)}\n")
+        time.sleep(2)
     else:
         print("\nERRORE\nHai inserito qualcosa di sbagliato :P\nRiprova ;D\n")
         time.sleep(2)
