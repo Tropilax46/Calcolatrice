@@ -27,17 +27,23 @@ bash
 git clone https://github.com/Tropilax46/Calcolatrice.git
 cd Calcolatrice
 ```
-
+---
 - Eseguire il programma:
 ```
 bash
 python Calcolatrice.py
 ```
+
+---
+
 - Interagire con il programma:
 
 Segui le istruzioni sullo schermo per eseguire le operazioni matematiche desiderate.
 
-Struttura del Codice
+---
+
+- Struttura del Codice:
+
 Calcolatrice.py: Il file principale che contiene tutte le funzioni e la logica del programma.
 
 ## Contributi
